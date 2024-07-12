@@ -9,7 +9,16 @@ Durante o projeto, são abordados os seguintes tópicos:
 * Desenvolvimento de operações de gerenciamento de livros (Cadastro, leitura por ID e remoção de livros).
 * Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
 * Desenvolvimento de testes unitários para validação das funcionalidades.
-* Implantação do sistema na nuvem através do Heroku.
+* Documentação do projeto com Swagger.
+
+Para visualizar a documentação com projeto rodando: (http://localhost:8080/swagger-ui/index.html).
+
+Visialização no SwaggerHub:
+
+```dtd
+https://app.swaggerhub.com/apis/DANIEL0333V/my-Books/1.0.0
+```
+
 
 Para executar o projeto no terminal, digite o seguinte comando:
 

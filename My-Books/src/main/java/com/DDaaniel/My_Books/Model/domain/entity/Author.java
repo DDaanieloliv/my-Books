@@ -1,4 +1,4 @@
-package com.DDaaniel.My_Books.entity;
+package com.DDaaniel.My_Books.Model.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

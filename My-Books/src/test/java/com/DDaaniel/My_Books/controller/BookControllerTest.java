@@ -1,8 +1,8 @@
 package com.DDaaniel.My_Books.controller;
 
-import com.DDaaniel.My_Books.dto.BookDTO;
-import com.DDaaniel.My_Books.dto.MessageResponseDTO;
-import com.DDaaniel.My_Books.service.BookService;
+import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+import com.DDaaniel.My_Books.Model.domain.dto.MessageResponseDTO;
+import com.DDaaniel.My_Books.Model.service.BookService;
 import org.hamcrest.core.Is;
 //Utilizada para criar matcher que verifica se um valor é igual a outro.
 

@@ -1,4 +1,4 @@
-package com.DDaaniel.My_Books.exception;
+package com.DDaaniel.My_Books.Model.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

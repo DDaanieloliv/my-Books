@@ -1,7 +1,7 @@
 package com.DDaaniel.My_Books.utils;
 
-import com.DDaaniel.My_Books.dto.AuthorDTO;
-import com.DDaaniel.My_Books.entity.Author;
+import com.DDaaniel.My_Books.Model.domain.dto.AuthorDTO;
+import com.DDaaniel.My_Books.Model.domain.entity.Author;
 import com.github.javafaker.Faker;
 
 public class AuthorUtils {

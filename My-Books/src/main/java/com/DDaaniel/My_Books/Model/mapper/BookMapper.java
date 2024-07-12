@@ -1,4 +1,4 @@
-package com.DDaaniel.My_Books.mapper;//package com.example.PersonalBooks.mapper;
+//package com.DDaaniel.My_Books.Model.mapper;
 
 //import com.example.PersonalBooks.dto.BookDTO;
 //import com.example.PersonalBooks.entity.Book;
@@ -54,6 +54,7 @@ acessar a variavel ´INSTANCE´ e utilizar os metodos de converção que ela pos
 //
 //    // Método para converter Book em BookDTO
 //    BookDTO toDTO(Book book);
+
 //}
 
 

@@ -1,9 +1,10 @@
 package com.DDaaniel.My_Books.service;
 
-import com.DDaaniel.My_Books.dto.BookDTO;
-import com.DDaaniel.My_Books.entity.Book;
-import com.DDaaniel.My_Books.exception.BookNotFoundException;
-import com.DDaaniel.My_Books.repository.BookRepository;
+import com.DDaaniel.My_Books.Model.service.BookService;
+import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+import com.DDaaniel.My_Books.Model.domain.entity.Book;
+import com.DDaaniel.My_Books.Model.exception.BookNotFoundException;
+import com.DDaaniel.My_Books.Model.domain.repository.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

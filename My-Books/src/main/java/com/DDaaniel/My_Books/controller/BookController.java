@@ -1,10 +1,10 @@
 package com.DDaaniel.My_Books.controller;
 
 
-import com.DDaaniel.My_Books.dto.BookDTO;
-import com.DDaaniel.My_Books.dto.MessageResponseDTO;
-import com.DDaaniel.My_Books.exception.BookNotFoundException;
-import com.DDaaniel.My_Books.service.BookService;
+import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+import com.DDaaniel.My_Books.Model.domain.dto.MessageResponseDTO;
+import com.DDaaniel.My_Books.Model.exception.BookNotFoundException;
+import com.DDaaniel.My_Books.Model.service.BookService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

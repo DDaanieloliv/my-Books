@@ -1,7 +1,7 @@
 package com.DDaaniel.My_Books.utils;
 
-import com.DDaaniel.My_Books.dto.BookDTO;
-import com.DDaaniel.My_Books.entity.Book;
+import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+import com.DDaaniel.My_Books.Model.domain.entity.Book;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

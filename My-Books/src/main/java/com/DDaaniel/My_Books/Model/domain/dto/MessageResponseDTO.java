@@ -1,4 +1,4 @@
-package com.DDaaniel.My_Books.dto;
+package com.DDaaniel.My_Books.Model.domain.dto;
 
 import lombok.Builder;
 import lombok.Data;

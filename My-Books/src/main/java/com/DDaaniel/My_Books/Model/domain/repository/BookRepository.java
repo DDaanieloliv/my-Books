@@ -1,6 +1,6 @@
-package com.DDaaniel.My_Books.repository;
+package com.DDaaniel.My_Books.Model.domain.repository;
 
-import com.DDaaniel.My_Books.entity.Book;
+import com.DDaaniel.My_Books.Model.domain.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

@@ -1,12 +1,12 @@
-package com.DDaaniel.My_Books.service;
+package com.DDaaniel.My_Books.Model.service;
 
-import com.DDaaniel.My_Books.dto.AuthorDTO;
-import com.DDaaniel.My_Books.dto.BookDTO;
-import com.DDaaniel.My_Books.dto.MessageResponseDTO;
-import com.DDaaniel.My_Books.entity.Author;
-import com.DDaaniel.My_Books.entity.Book;
-import com.DDaaniel.My_Books.exception.BookNotFoundException;
-import com.DDaaniel.My_Books.repository.BookRepository;
+import com.DDaaniel.My_Books.Model.domain.dto.AuthorDTO;
+import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+import com.DDaaniel.My_Books.Model.domain.dto.MessageResponseDTO;
+import com.DDaaniel.My_Books.Model.domain.entity.Author;
+import com.DDaaniel.My_Books.Model.domain.entity.Book;
+import com.DDaaniel.My_Books.Model.exception.BookNotFoundException;
+import com.DDaaniel.My_Books.Model.domain.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

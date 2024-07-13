@@ -1,0 +1,140 @@
+openapi: 3.0.1
+info:
+  title: OpenApi specification - Daniel
+  description: '(OpenApi documentation for Spring) API para gerenciar uma coleção de livros pessoais. '
+  termsOfService: https://Some-url.com
+  contact:
+    name: Daniel
+    url: https://github.com/DDaanieloliv
+    email: daniel****@gmail.com
+  license:
+    name: MIT Licence
+    url: https://opensource.org/license/mit
+  version: 1.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/DANIEL0333V/my-Books/1.0.0
+  description: SwaggerHub API Auto Mocking
+- url: https://github.com/DDaanieloliv
+  description: Local DEV ENV
+- url: http://localhost:8080
+  description: PROD DEV ENV
+paths:
+  /api/v1/books:
+    post:
+      tags:
+      - book-controller
+      summary: Create a new Book
+      description: Creates a new Book entity with the provided data.
+      operationId: create
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookDTO'
+        required: true
+      responses:
+        "201":
+          description: Book created successfully
+          content:
+            application/json:
+              examples:
+                Example 201:
+                  description: Example 201
+                  value:
+                    message: Book created successfully with ID 1
+        "400":
+          description: Invalid input data
+        "500":
+          description: Internal server error
+  /api/v1/books/{id}:
+    get:
+      tags:
+      - book-controller
+      summary: Get Book by ID
+      description: Fetches a Book entity by its ID.
+      operationId: findById
+      parameters:
+      - name: id
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: Book found successfully
+          content:
+            application/json:
+              examples:
+                Example 200:
+                  description: Example 200
+                  value:
+                    id: 1
+                    name: Book Example
+                    pages: 100
+                    chapters: 10
+                    isbn: 123-4567890123
+                    publisherName: Publisher Example
+                    author:
+                      id: 2
+                      name: Author Example
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Book not found
+        "500":
+          description: Internal server error
+components:
+  schemas:
+    AuthorDTO:
+      required:
+      - age
+      - name
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          maxLength: 200
+          minLength: 0
+          type: string
+        age:
+          type: integer
+          format: int32
+    BookDTO:
+      required:
+      - author
+      - chapters
+      - isbn
+      - name
+      - pages
+      - publisherName
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          maxLength: 200
+          minLength: 0
+          type: string
+        pages:
+          type: integer
+          format: int32
+        chapters:
+          type: integer
+          format: int32
+        isbn:
+          maxLength: 100
+          minLength: 0
+          pattern: "(?:ISBN(?:-10)?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$)[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$"
+          type: string
+        publisherName:
+          maxLength: 200
+          minLength: 0
+          type: string
+        author:
+          $ref: '#/components/schemas/AuthorDTO'

@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AuthorDTO  {
 
-    //private Long id;
+    private Long id;
 
     @NotBlank
     @Size(max = 200)

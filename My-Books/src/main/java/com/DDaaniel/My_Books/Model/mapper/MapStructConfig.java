@@ -1,3 +1,4 @@
+/*
 package com.DDaaniel.My_Books.Model.mapper;
 
 import org.mapstruct.factory.Mappers;
@@ -17,3 +18,5 @@ public class MapStructConfig {
 // Crie uma classe de configuração (por exemplo, MapStructConfig) e
 // registre o BookMapper como um bean. (Devido o Spring não estar reconhecendo
 // o BookMapper como um bean do Spring).
+
+ */

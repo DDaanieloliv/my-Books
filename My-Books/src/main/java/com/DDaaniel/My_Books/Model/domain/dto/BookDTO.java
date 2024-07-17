@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class    BookDTO {
 
-    //private Long id;
+    private Long id;
 
     @NotBlank
     @Size(max = 200)

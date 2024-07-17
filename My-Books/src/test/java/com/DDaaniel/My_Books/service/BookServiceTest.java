@@ -1,15 +1,21 @@
 package com.DDaaniel.My_Books.service;
 
+//import com.DDaaniel.My_Books.Model.mapper.BookMapper;
+//import com.DDaaniel.My_Books.Model.mapper.MapStructConfig;
 import com.DDaaniel.My_Books.Model.service.BookService;
 import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
 import com.DDaaniel.My_Books.Model.domain.entity.Book;
 import com.DDaaniel.My_Books.Model.exception.BookNotFoundException;
 import com.DDaaniel.My_Books.Model.domain.repository.BookRepository;
+import com.DDaaniel.My_Books.utils.BookUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
 import java.util.Optional;
 
@@ -20,13 +26,45 @@ import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
+//@SpringBootTest
+//@Import(MapStructConfig.class)
 public class BookServiceTest {
+
+
+//    @Mock
+//    private BookMapper bookMapper;
 
     @Mock
     private BookRepository bookRepository;
 
+//    @Autowired
     @InjectMocks
     private BookService bookService;
+
+
+//    @Test
+//    public void testMapToDTO() throws BookNotFoundException {
+//        // Dados de exemplo utilizando BookUtils
+//        Book fakeBook = BookUtils.createFakeBook();
+//        BookDTO fakeBookDTO = BookUtils.createFakeBookDTO();
+//
+//        // Configuração do mock para retornar um BookDTO simulado
+//        when(bookMapper.toDTO(any(Book.class)))
+//                .thenReturn(fakeBookDTO);
+//
+//        // Configura o comportamento do repositório para retornar o livro falso
+//        when(bookRepository.findById(fakeBook.getId()))
+//                .thenReturn(Optional.of(fakeBook));
+//
+//        // Chama o método da classe de serviço que você deseja testar
+//        BookDTO dto = bookService.findById(fakeBook.getId());
+//
+//        // Verifica se o resultado do mapeamento é o esperado
+//        assertEquals(fakeBookDTO.getName(), dto.getName());
+//        assertEquals(fakeBookDTO.getAuthor().getName(), dto.getAuthor().getName());
+//        assertEquals(fakeBookDTO.getIsbn(), dto.getIsbn());
+//        assertEquals(fakeBookDTO.getPublisherName(), dto.getPublisherName());
+//    }
 
     @Test
     void whenGivenExistingIdThenReturnThisBook() throws BookNotFoundException {

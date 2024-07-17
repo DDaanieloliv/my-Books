@@ -1,10 +1,11 @@
-package com.DDaaniel.My_Books.Model.mapper;
 
-import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
-import com.DDaaniel.My_Books.Model.domain.entity.Book;
-import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
-import org.mapstruct.factory.Mappers;
+//package com.DDaaniel.My_Books.Model.mapper;
+//
+//import com.DDaaniel.My_Books.Model.domain.dto.BookDTO;
+//import com.DDaaniel.My_Books.Model.domain.entity.Book;
+//import org.mapstruct.Mapper;
+//import org.mapstruct.ReportingPolicy;
+//import org.mapstruct.factory.Mappers;
 
 import javax.management.DescriptorAccess;
 
@@ -20,8 +21,8 @@ mesmos atributos, fazendo com que ao acessar a interface seja possivel
 acessar a variavel ´INSTANCE´ e utilizar os metodos de converção que ela possui.
 */
 
-@Mapper(componentModel = "spring")
-public interface BookMapper {
+//@Mapper(componentModel = "spring")
+//public interface BookMapper {
 
 
 
@@ -49,17 +50,17 @@ public interface BookMapper {
            Assegura que a variável não pode ser modificada após ser inicializada.
        */
 
-    BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
+    //BookMapper INSTANCE = Mappers.getMapper(BookMapper.class);
     //A implementação que será gerada será uma implantação da interf. 'BookMapper.class'
 
     // Método para converter BookDTO em Book
 
-    Book toModel(BookDTO bookDTO);
+    //Book toModel(BookDTO bookDTO);
 
     // Método para converter Book em BookDTO
-    BookDTO toDTO(Book book);
+    //BookDTO toDTO(Book book);
 
-}
+//}
 
 
 //  A lib MapStruct é uma biblioteca de mapeamento de Java que ajuda a converter entre
